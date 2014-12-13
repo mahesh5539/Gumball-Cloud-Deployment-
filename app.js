@@ -36,7 +36,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', 
 	function(req,res){
-			client.get("http://nkukday-grails-gubmall-v2.cfapps.io/gumballs", function(data, response){
+			client.get("gumballserver-maheshd.rhcloud.com", function(data, response){
             dt['id'] = data[0].id;
             dt['countGumballs'] = data[0].countGumballs;
             dt['modelNumber'] = data[0].modelNumber;
